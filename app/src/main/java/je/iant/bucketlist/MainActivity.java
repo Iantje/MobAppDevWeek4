@@ -205,6 +205,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerView.OnIt
                 Bucketitem bucketitem = new Bucketitem();
                 bucketitem.name = data.getStringExtra(EXTRA_NAME);
                 bucketitem.description = data.getStringExtra(EXTRA_DESC);
+                bucketitem.checked = false;
 
                 insertItem(bucketitem);
             }

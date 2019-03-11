@@ -30,7 +30,7 @@ public class BucketitemAdapter extends RecyclerView.Adapter<BucketitemView> {
     @Override
     public void onBindViewHolder(@NonNull BucketitemView bucketitemView, int i) {
         Bucketitem bucketitem = bucketitems.get(i);
-        bucketitemView.updateFields(bucketitem.name, bucketitem.description);
+        bucketitemView.updateFields(bucketitem.id, bucketitem.name, bucketitem.description, bucketitem.checked);
     }
 
     @Override

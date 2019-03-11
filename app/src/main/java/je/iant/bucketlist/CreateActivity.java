@@ -27,8 +27,8 @@ public class CreateActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent resultIntent = new Intent();
-                resultIntent.putExtra(MainActivity.EXTRA_NAME, nameText.getText());
-                resultIntent.putExtra(MainActivity.EXTRA_DESC, descText.getText());
+                resultIntent.putExtra(MainActivity.EXTRA_NAME, nameText.getText().toString());
+                resultIntent.putExtra(MainActivity.EXTRA_DESC, descText.getText().toString());
                 Log.d("Nuhu", "Nullsssss" + nameText.getText() + " " + descText.getText());
                 setResult(Activity.RESULT_OK, resultIntent);
 
